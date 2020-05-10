@@ -1,0 +1,200 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+#back2Top {
+    width: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    background-color: #FFF;
+    color: #337AB7;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+}
+#back2Top:hover {
+    background-color: #337AB7;
+    color: #FFF;
+}
+.name{
+    color: #3B89B8;
+    font-weight: bold;
+}
+.name1{
+    color: #3B89B8;
+    font-weight: bold;
+    font-size: 28px;
+}
+.welcome-section {
+    font-family: Verdana;
+    background-image: url("F:/wamp/www/PortFolio/bootstrap-scrolling-sticky-menu/Assets/website-background-png-transparent-c.png");
+    background-attachment: scroll;
+    font-size: 30px;
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+}
+.logoCV {
+    max-height: 100px;
+}
+.name{
+    font-size: 60px;
+}
+.about-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: rgb(214,246,255);
+    background: linear-gradient(347deg, rgba(214,246,255,1) 0%, rgba(255,233,233,1) 100%);
+    font-size: 22px;
+}
+.about-section2 {
+     height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: rgb(255,165,165);
+    background: linear-gradient(282deg, rgba(255,165,165,1) 0%, rgba(214,255,250,1) 76%);
+    font-size: 22px;
+}
+.whatwedo-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #fff;
+    /*background-image: url("F:/wamp/www/PortFolio/bootstrap-scrolling-sticky-menu/Assets/vincitech-afbeelding-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    background: rgb(233,255,214);
+    background: linear-gradient(45deg, rgba(233,255,214,1) 0%, rgba(214,246,255,1) 100%);
+}
+#textVeille {
+    font-size: 22px;
+}
+#imageVR {
+    float: right;
+}
+.whatwedo2-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #fff;
+    background: rgb(255,208,208);
+    background: linear-gradient(332deg, rgba(255,208,208,1) 0%, rgba(233,255,214,1) 76%);
+}
+/* Split screen for SLAM SISR*/
+
+.left {
+  float: left;
+  width: 50%;
+}
+
+.right {
+  margin-left: 60%;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centerImage img{
+  max-width: 100px;
+}
+#imageGA{
+    float : left;
+}
+.contact-section {
+    font-size: 25px;
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background-image: url("F:/wamp/www/PortFolio/bootstrap-scrolling-sticky-menu/Assets/background_site.jpg");
+    background-repeat: no-repeat;
+    background-position: 45% 60%;
+}
+label{
+    float: left;
+}
+#htmlcss{
+    margin-left: 200px;
+    margin-bottom: 50px;
+}
+#php{
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+#file{
+}
+#file1{
+    margin-bottom: 10px;
+}
+
+progress {
+   display: block; /* default: inline-block */
+   width: 300px;
+   margin: 1em auto;
+   padding: 4px;
+   border: 0 none;
+   background: #3B89B8;
+   border-radius: 14px;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5),
+               0px 1px 0px rgba(255,255,255,0.2);
+    margin-bottom: 15px;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+   progress {
+      height: 25px; /* légèrement plus fin sur Chrome par défaut */
+   }
+}
+/* on enlève le fond de cet élément supplémentaire */
+progress::-webkit-progress-bar {
+   background: transparent;
+}
+/* on applique les mêmes styles que sur ::-moz-progress-bar */
+progress::-webkit-progress-value {  
+   background: #FFF;
+   border-radius: 12px;
+   box-shadow: inset 0 -2px 4px rgba(0,0,0,0.4),
+               0 2px 5px 0px rgba(0,0,0,0.3); 
+} 
+.navbar-default .navbar-nav > li > a:hover {
+	color: #333;
+	background-color: #F0F0F0;
+}
+.navbar-default {
+    background-color: #EBFAFF;
+    border-color: #e7e7e7;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #000;
+}
+

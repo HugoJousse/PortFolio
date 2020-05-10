@@ -53,7 +53,7 @@ html {
 }
 .welcome-section {
     font-family: Verdana;
-    background-image: url("F:/wamp/www/PortFolio/bootstrap-scrolling-sticky-menu/Assets/website-background-png-transparent-c.png");
+    background-image: url("../Assets/website-background-png-transparent-c.png");
     background-attachment: scroll;
     font-size: 30px;
     height: 100%;
@@ -75,9 +75,8 @@ html {
     font-size: 22px;
 }
 .about-section2 {
-     height: 100%;
+    height: 100%;
     padding-top: 150px;
-    text-align: center;
     background: rgb(255,165,165);
     background: linear-gradient(282deg, rgba(255,165,165,1) 0%, rgba(214,255,250,1) 76%);
     font-size: 22px;
@@ -110,22 +109,15 @@ html {
 /* Split screen for SLAM SISR*/
 
 .left {
+  text-align: left;
   float: left;
   width: 50%;
 }
 
 .right {
+  text-align: left;
   margin-left: 60%;
 }
-
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
 .centerImage img{
   max-width: 100px;
 }
@@ -140,6 +132,14 @@ html {
     background-image: url("F:/wamp/www/PortFolio/bootstrap-scrolling-sticky-menu/Assets/background_site.jpg");
     background-repeat: no-repeat;
     background-position: 45% 60%;
+}
+.stages-section {
+    font-size: 25px;
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: rgb(233,255,214);
+    background: linear-gradient(45deg, rgba(233,255,214,1) 0%, rgba(214,246,255,1) 100%);
 }
 label{
     float: left;
@@ -185,7 +185,10 @@ progress::-webkit-progress-value {
    border-radius: 12px;
    box-shadow: inset 0 -2px 4px rgba(0,0,0,0.4),
                0 2px 5px 0px rgba(0,0,0,0.3); 
-} 
+}
+.ImgComp{
+    max-width: 30px;
+}
 .navbar-default .navbar-nav > li > a:hover {
 	color: #333;
 	background-color: #F0F0F0;

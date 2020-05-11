@@ -17,6 +17,35 @@ html {
         padding: 0;
     }
 }
+.hr {
+    align-items: center;
+    display: flex;
+    text-align: center;
+    color: #A46100;
+}
+
+.hr::before,
+.hr::after {
+    border-top: .0625em solid;
+    content: "";
+    flex: 1;
+    margin: 0 .2em;
+}
+.hr2 {
+    align-items: center;
+    display: flex;
+    text-align: center;
+    color: #E58E00
+}
+
+.hr2::before,
+.hr2::after {
+    border-top: .0425em solid;
+    content: "";
+    flex: 1;
+    margin: 0 .2em;
+}
+
 #back2Top {
     width: 40px;
     line-height: 40px;
@@ -43,17 +72,18 @@ html {
     color: #FFF;
 }
 .name{
-    color: #3B89B8;
+    /*color: #3B89B8;*/
     font-weight: bold;
+    font-size: 65px;
 }
 .name1{
     color: #3B89B8;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 58px;
 }
 .welcome-section {
-    font-family: Verdana;
-    background-image: url("../Assets/website-background-png-transparent-c.png");
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url("F:/wamp/www/PortFolio/bootstrap-scrolling-sticky-menu/Assets/website-background-png-transparent.png");
     background-attachment: scroll;
     font-size: 30px;
     height: 100%;
@@ -63,6 +93,10 @@ html {
 .logoCV {
     max-height: 100px;
 }
+.logoTrack{
+    max-height: 100px;
+    float : right; 
+}
 .name{
     font-size: 60px;
 }
@@ -70,15 +104,23 @@ html {
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: rgb(214,246,255);
-    background: linear-gradient(347deg, rgba(214,246,255,1) 0%, rgba(255,233,233,1) 100%);
+    background: linear-gradient(271deg, #dfffea, #c3ffef);
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 22px;
+    background-size: 200% 200%;
+    -webkit-animation: AnimationName 19s ease infinite;
+    -moz-animation: AnimationName 19s ease infinite;
+    animation: AnimationName 19s ease infinite;
 }
 .about-section2 {
     height: 100%;
     padding-top: 150px;
-    background: rgb(255,165,165);
-    background: linear-gradient(282deg, rgba(255,165,165,1) 0%, rgba(214,255,250,1) 76%);
+    background: linear-gradient(271deg, #ffefdf, #c3ffef);
+    background-size: 200% 200%;
+    -webkit-animation: AnimationName 39s ease infinite;
+    -moz-animation: AnimationName 39s ease infinite;
+    animation: AnimationName 39s ease infinite;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 22px;
 }
 .whatwedo-section {
@@ -91,6 +133,8 @@ html {
     background-size: cover;*/
     background: rgb(233,255,214);
     background: linear-gradient(45deg, rgba(233,255,214,1) 0%, rgba(214,246,255,1) 100%);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
 }
 #textVeille {
     font-size: 22px;
@@ -105,6 +149,7 @@ html {
     background: #fff;
     background: rgb(255,208,208);
     background: linear-gradient(332deg, rgba(255,208,208,1) 0%, rgba(233,255,214,1) 76%);
+    font-family: 'Josefin Sans', sans-serif;
 }
 /* Split screen for SLAM SISR*/
 
@@ -112,11 +157,24 @@ html {
   text-align: left;
   float: left;
   width: 50%;
+  border-width:1px;
+  border-radius: 10px;
+  box-shadow: 0px 20px 20px #aaa;
 }
 
 .right {
   text-align: left;
-  margin-left: 60%;
+  margin-left: 51%;
+  border-width:1px;
+  border-radius: 10px;
+  box-shadow: 0px 20px 20px #aaa;
+}
+.center {
+  width: 50%;
+  border-width:1px;
+  border-radius: 10px;
+  box-shadow: 0px 20px 20px #aaa;
+  margin-left: 275px;
 }
 .centerImage img{
   max-width: 100px;
@@ -129,9 +187,12 @@ html {
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background-image: url("F:/wamp/www/PortFolio/bootstrap-scrolling-sticky-menu/Assets/background_site.jpg");
-    background-repeat: no-repeat;
-    background-position: 45% 60%;
+    font-family: 'Josefin Sans', sans-serif;
+    background: linear-gradient(231deg, #ffedd4, #c3ffef);
+    background-size: 200% 200%;
+    -webkit-animation: AnimationName 9s ease infinite;
+    -moz-animation: AnimationName 9s ease infinite;
+    animation: AnimationName 9s ease infinite;
 }
 .stages-section {
     font-size: 25px;
@@ -140,6 +201,16 @@ html {
     text-align: center;
     background: rgb(233,255,214);
     background: linear-gradient(45deg, rgba(233,255,214,1) 0%, rgba(214,246,255,1) 100%);
+    font-family: 'Josefin Sans', sans-serif;
+}
+.patrimoine-section{
+     font-size: 22px;
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: rgb(233,255,214);
+    background: linear-gradient(45deg, rgba(233,255,214,1) 0%, rgba(214,246,255,1) 100%);
+    font-family: 'Josefin Sans', sans-serif;
 }
 label{
     float: left;
@@ -164,7 +235,8 @@ progress {
    margin: 1em auto;
    padding: 4px;
    border: 0 none;
-   background: #3B89B8;
+   background: rgb(46,46,46);
+   background: linear-gradient(155deg, rgba(46,46,46,1) 0%, rgba(120,120,120,1) 77%);
    border-radius: 14px;
    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5),
                0px 1px 0px rgba(255,255,255,0.2);
@@ -189,6 +261,12 @@ progress::-webkit-progress-value {
 .ImgComp{
     max-width: 30px;
 }
+.ImgComp2{
+    max-width: 40px;
+}
+.ImgComp3{
+    max-width: 10px
+}
 .navbar-default .navbar-nav > li > a:hover {
 	color: #333;
 	background-color: #F0F0F0;
@@ -200,4 +278,79 @@ progress::-webkit-progress-value {
 .navbar-default .navbar-nav > li > a {
     color: #000;
 }
+.bouton1 {
+    border-radius:12px 0 12px 0;
+    background: rgb(180,255,173);
+    background: linear-gradient(155deg, rgba(180,255,173,1) 0%, rgba(255,156,131,1) 80%);
+    border:none;
+    color:#555;
+    font:bold 12px;
+    font-family: 'Roboto', sans-serif;
+    padding:6px 0 6px 0;
+    box-shadow:1px 1px 3px #999;
+    }
+.bouton2 {
+    border-radius:12px 0 12px 0;
+    border:none;
+    color:#555;
+    background: rgb(131,255,231);
+    background: linear-gradient(155deg, rgba(131,255,231,1) 0%, rgba(180,255,173,1) 82%);
+    font:bold 12px;
+    font-family: 'Roboto', sans-serif;
+    padding:6px 0 6px 0;
+    box-shadow:1px 1px 3px #999;
+}
+.bouton2bis{
+    border-radius:12px 0 12px 0;
+    border:none;
+    color:#555;
+    background: rgb(131,255,231);
+    background: linear-gradient(155deg, rgba(131,255,231,1) 0%, rgba(180,255,173,1) 82%);
+    font:bold 12px;
+    font-family: 'Roboto', sans-serif;
+    padding:6px 0 6px 0;
+    box-shadow:1px 1px 3px #999;
+    margin-right: 190px;
+}
+.thebutton{
+    margin-top: 14px;
+    margin-left : 90px;
+}
+.thebutton2{
+    margin-top: 34px;
+    margin-left : 80px;
+}
+.tracking-in-expand-fwd{animation:tracking-in-expand-fwd 2s cubic-bezier(.215,.61,.355,1.000) both}
+@keyframes tracking-in-expand-fwd{0%{letter-spacing:-.5em;transform:translateZ(-700px);opacity:0}40%{opacity:.6}100%{transform:translateZ(0);opacity:1}}
+.animblock{
+    background: linear-gradient(270deg, #b6ffec, #b6ffd3);
+    background-size: 300% 300%;
+    -webkit-animation: AnimationName 9s ease infinite;
+    -moz-animation: AnimationName 9s ease infinite;
+    animation: AnimationName 9s ease infinite;
+    border-radius: 10px;
+}
+.animblock2{
+    background: linear-gradient(270deg, #b6ffd3, #b6ffec);
+    background-size: 300% 300%;
+    -webkit-animation: AnimationName 9s ease infinite;
+    -moz-animation: AnimationName 9s ease infinite;
+    animation: AnimationName 9s ease infinite;
+    border-radius: 10px;
+}
 
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}

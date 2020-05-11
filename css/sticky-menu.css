@@ -83,7 +83,7 @@ html {
 }
 .welcome-section {
     font-family: 'Josefin Sans', sans-serif;
-    background-image: url("F:/wamp/www/PortFolio/bootstrap-scrolling-sticky-menu/Assets/website-background-png-transparent.png");
+    background-image: url("../Assets/website-background-png-transparent.png");
     background-attachment: scroll;
     font-size: 30px;
     height: 100%;
